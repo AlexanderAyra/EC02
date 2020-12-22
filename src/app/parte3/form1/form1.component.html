@@ -1,0 +1,25 @@
+<h1>FORMULARIO 01</h1>
+
+<form [formGroup]="formulario01" (ngSubmit)="submit()">
+  <div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input formControlName="nombre" class="form-control" type="text" placeholder="Ingrese su Nombre">
+  </div>
+  <div class="form-group">
+    <label for="correo">Correo</label>
+    <input formControlName="correo" class="form-control" type="email" placeholder="Ingrese su Correo">
+  </div>
+  <div class="form-group">
+    <label for="edad">Edad</label>
+    <input formControlName="edad" class="form-control" type="number" placeholder="Ingrese su Edad">
+  </div>
+  <div class="form-group">
+    <label for="comentario">Comentario</label>
+    <textarea class="form-control rounded-0" formControlName="comentario" id="form01" rows="6"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+</form>
+
+<div>
+  {{datos}}
+</div>
